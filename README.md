@@ -231,3 +231,5 @@ SCP 플러그인을 이용하여 질소량 분포도를 만든다.
 
 => 완성된 필지별 질소량 분포지도 확인.
 
+![SA_GJ_MAP_1](https://user-images.githubusercontent.com/93892724/178998583-78bed440-ce98-4ffe-a255-6b1066d78134.jpg)
+
