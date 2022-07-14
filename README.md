@@ -1,6 +1,6 @@
-# **QGIS** 이용한 풋거름 질소량 분포지도 작성하기
+# **QGIS** 이용한 풋거름 필지별 질소량 분포지도 작성하기
 
-> 김솔아 작성
+> 김솔아 작성 (2022-07-14)
 
 
 <br>
@@ -152,8 +152,9 @@ SCP 플러그인을 이용하여 질소량 분포도를 만든다.
 * 'Expression'창에 질소량 회귀식(초록색 식) 입력
 * 오른쪽 방향 화살표(RUN, 빨간표시) 클릭
 
-![image](https://user-images.githubusercontent.com/93892724/178974823-c44fc928-465e-4ebc-88a2-678889a4cd5c.png)
--> <u>**질소량 분포지도**</u> 완성
+![image](https://user-images.githubusercontent.com/93892724/178988869-f4d043e6-e196-4b86-a154-7adcc0134006.png)
+
+-> <u>**질소량 분포지도**</u>(GJ_ndvi_clip) 완성
 <br>
 <br>
 
@@ -207,7 +208,26 @@ SCP 플러그인을 이용하여 질소량 분포도를 만든다.
 -> 실수형으로 표현된 결합 데이터 필드 생성 완료 (GJ_ND_mean, 빨간표시)
 -> 적용 누르고 확인 클릭
 
-* 좌측 레이어 패널에서 내보내기한 팜맵 우클릭 -> '속성 테이블' 클릭 -> 
+<br>
+<br>
 
+---
 
+* 좌측 레이어 패널에서 내보내기한 팜맵 우클릭 -> '속성 테이블' 클릭 -> 빨간 표시대로 맞춰주고 모두 갱신 버튼 클릭
+
+![image](https://user-images.githubusercontent.com/93892724/178990520-7afc55eb-725f-49ce-89f2-1383ca30818e.png)
+-> GJ_ND_mean값이 Null값에서 실수형태의 GJ_ND_ND_mean의 값으로 맞춰짐
+
+<br>
+<br>
+
+---
+
+* 내보내기한 팜맵 우클릭 -> '속성' 클릭 -> '심볼' 클릭 -> '단일 심볼'을 '단계 구분'으로 변경 -> '값' 칸에 실수형태의 결합된 데이터 필드명 선택 -> 색상 선택 -> '분류'(빨간표시) 클릭 -> '적용' 클릭 후 '확인' 클릭
+
+![image](https://user-images.githubusercontent.com/93892724/178991140-36f0192f-9bc9-4e0b-bfab-aeed7a387f06.png)
+
+![image](https://user-images.githubusercontent.com/93892724/178991808-873db619-eaec-4849-8fe2-e0a330ee37ff.png)
+
+=> 완성된 필지별 질소량 분포지도 확인.
 
